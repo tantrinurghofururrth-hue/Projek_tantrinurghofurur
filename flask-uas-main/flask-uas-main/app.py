@@ -47,7 +47,16 @@ def init_db():
         sample_books = [
             (str(uuid.uuid4()), 'Laskar Pelangi', 'Andrea Hirata', 'Bentang Pustaka'),
             (str(uuid.uuid4()), 'Bumi Manusia', 'Pramoedya Ananta Toer', 'Lentera Dipantara'),
-            (str(uuid.uuid4()), 'Filosofi Kopi', 'Dee Lestari', 'Truewriting')
+            (str(uuid.uuid4()), 'Filosofi Kopi', 'Dee Lestari', 'Truewriting'),
+            (str(uuid.uuid4()), 'Sang Pemimpi', 'Andrea Hirata', 'Bentang Pustaka'),
+            (str(uuid.uuid4()), 'Anak Semua Bangsa', 'Pramoedya Ananta Toer', 'Lentera Dipantara'),
+            (str(uuid.uuid4()), 'Ayah', 'Andrea Hirata', 'Bentang Pustaka'),
+            (str(uuid.uuid4()), 'Perempuan Berkalung Sorban', 'Abidah El Khalieqy', 'Arti Bumi Intaran'),
+            (str(uuid.uuid4()), 'Negeri 5 Menara', 'Ahmad Fuadi', 'Gramedia Pustaka Utama'),
+            (str(uuid.uuid4()), 'Pulang', 'Tere Liye', 'Republika Penerbit'),
+            (str(uuid.uuid4()), 'Hujan', 'Tere Liye', 'Gramedia Pustaka Utama'),
+            (str(uuid.uuid4()), 'Supernova: Ksatria, Puteri, dan Bintang Jatuh', 'Dee Lestari', 'Truedee Pustaka Sejati'),
+            (str(uuid.uuid4()), 'Ketika Cinta Bertasbih', 'Habiburrahman El Shirazy', 'Republika Penerbit'),
         ]
         cursor.executemany('INSERT INTO books (id, judul, penulis, penerbit) VALUES (?, ?, ?, ?)', sample_books)
         conn.commit()
