@@ -1,0 +1,5 @@
+﻿Flask==2.3.3
+reportlab==4.0.4
+qrcode==7.4.2
+Pillow==11.1.0
+gunicorn==21.2.0
